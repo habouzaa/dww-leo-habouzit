@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Définit l'encodage des caractères -->
+    <meta charset="UTF-8">
+
+    <!-- Titre de la page (onglet navigateur) -->
+    <title>Sneakers Shop - Accueil</title>
+
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Contient la barre de navigation principale du site -->
+    <header class="main-header">
+        <nav>
+            <!-- Liens de navigation vers différentes sections du site -->
+            <a href="#">HOME</a>
+            <a href="#">PRICER</a>
+            <a href="#">CART</a>
+            <a href="#">ACCOUNT</a>
+        </nav>
+    </header>
+
+    <!-- 
+    Ce que ça fait :
+    Affiche un menu en haut du site pour naviguer entre les pages.-->
+
+ 
+    <!-- Section principale visible en premier -->
+    <section class="hero-section">
+
+        <!-- Image principale -->
+        <img src="sneaker-hero.png" alt="Adidas Forum Low OG" class="hero-image">
+
+        <!-- Titre de la section -->
+        <h2>OUR PRODUCTS</h2>
+
+        <!-- Indicateur visuel -->
+        <div class="arrows">▼<br>▼</div>
+    </section>
+
+    <!-- 
+    Ce que ça fait :
+    Met en avant un visuel principal et incite l'utilisateur à scroller.
+
+    PROMPT IA :
+    "Crée une section hero avec une image principale, un titre centré
+    et une indication visuelle de scroll vers le bas."
+    -->
+
+
+    <!-- Barre de filtres -->
+    <nav class="filters">
+
+        <!-- Chaque filtre correspond à une catégorie -->
+        <div class="filter-item">BRANDS <span>▼</span></div>
+        <div class="filter-item">SIZES <span>▼</span></div>
+        <div class="filter-item">PRICE <span>▼</span></div>
+        <div class="filter-item">GENDER <span>▼</span></div>
+
+    </nav>
+
+    <!-- 
+    Ce que ça fait :
+    Interface de filtres pour trier les produits .
+
+    -->
+
+
+    <!-- Conteneur principal des produits -->
+    <main class="product-list">
+
+        <article class="product-card">
+
+            <!-- Partie haute de la carte -->
+            <div class="card-header">
+
+                <!-- Informations sur le produit -->
+                <div class="product-info">
+                    <h3>FORUM LOW OG</h3>
+
+                    <!-- Marque et cible -->
+                    <p class="brand">ADIDAS ORIGINALS / MEN</p>
+
+                    <!-- Description courte -->
+                    <p class="quote">
+                        "An urban and colourful look with this Adidas sneaker"
+                    </p>
+                </div>
+
+                <!-- Bouton d'achat redirigeant vers une page produit -->
+                <a href="product.html" class="btn-buy">BUY</a>
+            </div>
+
+            <!-- Partie visuelle -->
+            <div class="card-body">
+
+                <!-- Image du produit -->
+                <img src="sneaker-1.png" alt="Forum Low OG" class="product-img">
+
+                <!-- Graphique d’évolution du prix -->
+                <img src="chart-1.png" alt="Price History" class="chart-img">
+            </div>
+
+        </article>
+
+        <!-- 
+        Ce que ça fait :
+        Affiche une carte produit avec informations, image et historique de prix.
+
+        PROMPT IA :
+        "Crée une carte produit e-commerce avec nom, marque, description,
+        bouton d’achat, image produit et graphique de prix."
+        -->
+
+
+        <article class="product-card">
+
+            <div class="card-header">
+
+                <div class="product-info">
+                    <h3>GEL-QUANTUM 360 6 UTILITY</h3>
+
+                    <p class="brand">ASICS / MEN</p>
+
+                    <p class="quote">
+                        "The Asics Gel-Quantum 360 6 Trail: a sneaker that combines comfort and technical performance"
+                    </p>
+                </div>
+
+                <!-- Bouton d'achat  -->
+                <a href="#" class="btn-buy">BUY</a>
+            </div>
+
+            <div class="card-body">
+
+                <!-- Image du produit -->
+                <img src="sneaker-2.png" alt="Gel Quantum" class="product-img">
+
+                <!-- Graphique de prix -->
+                <img src="chart-2.png" alt="Price History" class="chart-img">
+            </div>
+
+        </article>
+
+        <!-- 
+        Ce que ça fait :
+        Réutilise la même structure pour afficher un autre produit.
+
+        PROMPT IA :
+        "Duplique une carte produit et adapte les données pour un autre modèle
+        en conservant la même structure HTML."
+        -->
+
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Titre de la page  -->
+    <title>Détail du produit</title>
+
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- Classe appliquée au body pour styliser le fond de la page produit -->
+<body class="product-page-bg">
+
+    <main class="product-detail">
+        
+        <div class="image-showcase">
+
+            <!-- Image principale du produit -->
+            <img src="sneaker-hero.png" alt="Adidas Forum Low OG">
+        </div>
+
+        <!-- 
+        Ce que ça fait :
+        Affiche une grande image du produit pour mise en valeur.
+
+        PROMPT IA :
+        "Crée une section affichant une image principale de produit
+        pour une page de détail e-commerce."
+        -->
+
+
+        <div class="purchase-section">
+
+            <div class="size-selector">
+
+                <!-- Bouton sélectionné par défaut -->
+                <button class="size-btn selected">36</button>
+
+                <!-- Boutons disponibles -->
+                <button class="size-btn">37</button>
+
+                <!-- Boutons indisponibles -->
+                <button class="size-btn disabled">38</button>
+
+                <button class="size-btn">39</button>
+
+                <button class="size-btn disabled">40</button>
+                <button class="size-btn disabled">41</button>
+
+                <button class="size-btn">42</button>
+                <button class="size-btn">43</button>
+                <button class="size-btn">44</button>
+            </div>
+
+            <!-- 
+            Ce que ça fait :
+            Permet à l'utilisateur de choisir une pointure.
+            - selected = taille sélectionnée
+            - disabled = taille indisponible
+
+            PROMPT IA :
+            "Crée un sélecteur de tailles pour une sneaker avec des boutons,
+            incluant des états sélectionné et désactivé."
+            -->
+
+
+            <button class="btn-buy small">BUY</button>
+
+
+        </div>
+
+    </main>
+
+
+
+</body>
+</html>

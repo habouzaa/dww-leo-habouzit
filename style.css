@@ -9,7 +9,7 @@ body { background-color: #ffffff; }
 
 
 
-/* barre de navigation horizontale */
+/* barre de navigation */
 .main-header { background-color: #5b6f9f; padding: 15px 40px; }
 .main-header nav { display: flex; gap: 30px; }
 .main-header a {

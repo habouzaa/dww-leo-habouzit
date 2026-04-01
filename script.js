@@ -13,7 +13,9 @@ const getData = async(doStuffs) => {
     }
 }
 
-getData((data)=>{
+getData((data) => {
+    console.log(data);
+
     const container = document.querySelector('.product-list');
 
     data.forEach((product) => {
@@ -38,3 +40,4 @@ getData((data)=>{
         container.innerHTML += cardHTML;
     });
 });
+

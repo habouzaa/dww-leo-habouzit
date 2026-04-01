@@ -1,150 +1,54 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
 body { background-color: #ffffff; }
 
-
-
-
-/* barre de navigation */
+/* navbar en haut */
 .main-header { background-color: #5b6f9f; padding: 15px 40px; }
 .main-header nav { display: flex; gap: 30px; }
-.main-header a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-}
+.main-header a { color: white; text-decoration: none; font-weight: bold; font-size: 14px; }
 
-/* PROMPT IA :
-"Crée une navbar horizontale avec liens espacés."
-*/
-
-
-/* section d’intro avec image + titre */
-.hero-section {
-    background-color: #e5e8f4;
-    text-align: center;
-    padding: 50px 20px 20px;
-}
+/* PROMPT IA : "cree un header sympa avec un fond gris et text centré" */
+.hero-section { background-color: #e5e8f4; text-align: center; padding: 50px 20px 20px; }
 .hero-image { max-width: 400px; margin-bottom: 20px; }
 .hero-section h2 { color: #5b6f9f; font-size: 18px; margin-bottom: 10px; }
 .arrows { color: white; font-size: 24px; line-height: 0.8; }
 
-
-
-
-/* barre horizontale cliquable */
-.filters {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    border-bottom: 1px solid #eee;
-}
+.filters { display: flex; justify-content: space-around; padding: 20px; border-bottom: 1px solid #eee; }
 .filter-item { font-weight: bold; font-size: 14px; cursor: pointer; }
 
-
-
-
-/*  colonne avec espacements */
-.product-list {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
+/* liste des prduits */
+.product-list { padding: 40px; display: flex; flex-direction: column; gap: 60px; }
 .product-card { display: flex; flex-direction: column; gap: 20px; }
-
-/* PROMPT IA :
-"Crée une liste verticale de cartes produits avec espacement."
-*/
-
-
-/* texte + bouton */
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; }
 .product-info h3 { font-size: 18px; margin-bottom: 5px; }
-.brand { font-size: 14px; color: #333; margin-bottom: 5px; }
+.brand { font-size: 14px; color: #333; margin-bottom: 5px; text-transform: uppercase; }
 .quote { font-size: 14px; font-style: italic; color: #555; }
 
-
-
-/* image + graphique */
-.card-body { display: flex; gap: 40px; align-items: center; }
+/* on pousse le graph a droite pr que ca soit plus propre*/
+.card-body { display: flex; justify-content: space-between; gap: 40px; align-items: center; }
 .product-img { width: 250px; }
 .chart-img { flex-grow: 1; max-width: 600px; }
 
-
-
+/* boutton d'achat */
 .btn-buy {
-    background-color: #d1d6ef;
-    color: #5b6f9f;
-    padding: 8px 40px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 14px;
-    text-decoration: none;
+    background-color: #d1d6ef; color: #5b6f9f; padding: 8px 40px;
+    border: none; font-weight: bold; cursor: pointer; font-size: 14px; text-decoration: none;
+}
+.btn-back {
+    background: none; border: none; font-size: 16px; font-weight: bold; color: #5b6f9f;
+    cursor: pointer; margin-bottom: 20px; align-self: flex-start;
 }
 
-/* PROMPT IA :
-"Crée un bouton d’achat simple et moderne."
-*/
-
-
-/*  centrage écran */
-.product-page-bg {
-    background-color: #f7f8fc;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* stylisation de la page de detail (celle qui est cachée de base) */
+.product-detail-container {
+    background-color: #f7f8fc; min-height: 100vh; padding: 40px;
+    display: flex; flex-direction: column; align-items: center;
 }
-.product-detail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-
-/* PROMPT IA :
-"Centre une page produit ."
-*/
-
-
-/*  mise en valeur */
-.image-showcase {
-    background-color: white;
-    padding: 60px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
-}
+.product-detail-content { display: flex; flex-direction: column; align-items: center; gap: 40px; max-width: 800px;}
+.image-showcase { background-color: white; padding: 60px; box-shadow: 0px 4px 15px rgba(0,0,0,0.05); }
 .image-showcase img { max-width: 400px; }
 
-
-
-
-/*  tailles + bouton */
-.purchase-section { display: flex; gap: 30px; align-items: center; }
-.size-selector { display: flex; gap: 10px; }
-.size-btn {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #999;
-    background: transparent;
-    color: #555;
-    cursor: pointer;
-}
-
-/* États des tailles */
+.purchase-section { display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;}
+.size-selector { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 15px;}
+.size-btn { width: 40px; height: 40px; border: 1px solid #999; background: transparent; color: #555; cursor: pointer; }
 .size-btn.selected { background-color: #8c8f96; color: white; border: none; }
 .size-btn.disabled { border-color: #eee; color: #ddd; cursor: not-allowed; }
-
-/* PROMPT IA :
-"Crée un sélecteur de tailles avec états sélectionné et désactivé."
-*/

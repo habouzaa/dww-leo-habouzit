@@ -1,78 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    <!-- Titre de la page -->
-    <title>Sneakers Shop - Accueil</title>
-
-    <!-- Lien vers le  CSS -->
+    <title>Sneakers Shop</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
-    <!-- Contient la barre de navigation  -->
     <header class="main-header">
         <nav>
-            <!-- Liens vers différentes sections  -->
-            <a href="#">HOME</a>
+            <a href="#" onclick="fermerDetail()">HOME</a>
             <a href="#">PRICER</a>
             <a href="#">CART</a>
             <a href="#">ACCOUNT</a>
         </nav>
     </header>
 
-    <!-- 
-    Ce que ça fait :
-    Affiche un menu en haut du site pour naviguer entre les pages-->
+    <div id="page-accueil">
+        <section class="hero-section">
+            <img src="sneaker-hero.png" alt="Hero" class="hero-image">
+            <h2>OUR PRODUCTS</h2>
+            <div class="arrows">▼<br>▼</div>
+        </section>
 
- 
-    <!-- Section  visible en premier -->
-    <section class="hero-section">
+        <nav class="filters">
+            <div class="filter-item">BRANDS <span>▼</span></div>
+            <div class="filter-item">SIZES <span>▼</span></div>
+            <div class="filter-item">PRICE <span>▼</span></div>
+            <div class="filter-item">GENDER <span>▼</span></div>
+        </nav>
 
-        <!-- Image principale -->
-        <img src="sneaker-hero.png" alt="Adidas Forum Low OG" class="hero-image">
+        <main class="product-list" id="conteneur-liste"></main>
+    </div>
 
-        <!-- Titre de la section -->
-        <h2>OUR PRODUCTS</h2>
+    <div id="page-detail" style="display: none;">
+        <main class="product-detail-container">
+            <div class="product-detail-content">
+                
+                <button class="btn-back" onclick="fermerDetail()">← Retour</button>
+                
+                <div class="image-showcase">
+                    <img id="detail-image" src="" alt="Sneaker en grand">
+                </div>
 
-        <!-- Indicateur -->
-        <div class="arrows">▼<br>▼</div>
-    </section>
+                <div class="purchase-section">
+                    <h2 id="detail-titre">Titre</h2>
+                    <p id="detail-marque" class="brand">Marque</p>
+                    <p id="detail-desc" class="quote">"Desc"</p>
 
-    <!-- 
-    Ce que ça fait :
-    Met en avant un visuel principal et incite l'utilisateur à scroller.
+                    <div class="size-selector">
+                        <button class="size-btn selected">36</button>
+                        <button class="size-btn">37</button>
+                        <button class="size-btn disabled">38</button>
+                        <button class="size-btn">39</button>
+                        <button class="size-btn disabled">40</button>
+                        <button class="size-btn disabled">41</button>
+                        <button class="size-btn">42</button>
+                    </div>
 
-    PROMPT IA :
-    "Crée une section  avec une image principale, un titre centré et une indication visuelle de scroll vers le bas."
-    -->
-
-
-    <!-- Barre de filtres -->
-    <nav class="filters">
-
-        <!-- Chaque filtre correspond à une catégorie -->
-        <div class="filter-item">BRANDS <span>▼</span></div>
-        <div class="filter-item">SIZES <span>▼</span></div>
-        <div class="filter-item">PRICE <span>▼</span></div>
-        <div class="filter-item">GENDER <span>▼</span></div>
-
-    </nav>
-
-    <!-- 
-    Ce que ça fait :
-    Interface de filtres pour trier les produits .
-
-    -->
-
-<main class="product-list">
-         </main>
+                    <button class="btn-buy" style="margin-top: 20px;">ADD TO CART</button>
+                </div>
+            </div>
+        </main>
+    </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
